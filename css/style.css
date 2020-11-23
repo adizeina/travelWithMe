@@ -37,6 +37,11 @@ h3{
 	text-transform: capitalize;
 
 }
+h4{
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+	color: #44593A;
+}
 
 h5{
 	font-family: 'Josefin Slab', serif;
@@ -141,6 +146,10 @@ p{
 
 
 
+/* -----------------------DREAM DESTINATION PAGE ----------------------------*/
+.content-container{
+	margin: 3% 15% 3% 15%;
+}
 
 
 
