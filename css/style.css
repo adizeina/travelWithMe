@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
+
+*{
+	/* margin: 0px, padding: 0px ???*/
+	box-sizing: border-box;
+}
+
+/*font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+
+*/
+
+h1{
+	font-family: 'Lobster', cursive;
+	font-size: 92px;
+	color: white;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;	
+}
+
+h5{
+	font-family: 'Josefin Slab', serif;
+	font-size: 17px;
+	color: #44593A;
+}
+
+/* HEADER */ 
+
+/* Navigation */
+
+
+
+.nav-link{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: #44593A;
+}
+
+/* End Navigation */
+
+
+
+.background{
+	width:100%;
+	height: 500px;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.container-fluid img{
+	opacity: 0.53;
+	width:100%;
+}
+
+.fa i{
+	color: #44593A;
+}
+
+.navbar a:link{
+	color: orange;
+}
+
+/* END HEADER */
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+	background-color: #C9D5C3;
+	width: 100%;
+}
+
+/* END FOOTER */
