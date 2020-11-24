@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap');
 
+
 *{
 	/* margin: 0px, padding: 0px ???*/
 	box-sizing: border-box;
@@ -88,10 +89,7 @@ p{
 }
 
 
-/* COMMMMMEEEE BACK AND DO HOVER AND STUFF */
-.navbar a:active{
-	color: orange;
-}
+
 
 /* End Navigation */
 
@@ -99,10 +97,11 @@ p{
 
 .background{
 	width:100%;
-	height: 600px;
+	height: 700px;
 	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+
 
 }
 
@@ -121,19 +120,6 @@ p{
 
 }
 
-/* END HEADER */
-
-
-
-/* album-container */
-.album-container{
-	padding: 20px;
-	margin: 3% 15% 3% 15%;
-	text-align:center;
-}
-/* END album-container */
-
-
 
 /* intro-container */
 .intro-container{
@@ -146,9 +132,119 @@ p{
 }
 /* END intro container */
 
+/* END HEADER */
+
+
+
+/* album-container */
+.album-container{
+	padding: 20px;
+	margin: 3% 15% 3% 15%;
+	text-align:center;
+}
+/* END album-container */
+
+/* railway container */
+.full-width-container{
+	width:100%;
+	height: 400px;
+	background-image: url("../images/railway.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* END railway container */
+
+
+/*------ CONTACT FORM-------*/
+#form {
+	padding: 2rem;
+	background: #228B22;
+}
+
+#form input[type='text'] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+
+.error {
+	background: #800000;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    font-size: 15px;
+	color:#44593A;
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid black; /* Black border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1px; /* Add a top margin */
+    margin-bottom: 1px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+	color:#44593A;
+	font-family: 'Poppins', sans-serif;
+	font-style: bold;
+	padding: 3px;
+	cursor: pointer;
+	border: none;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    color: black;
+  }
+
+ .fa-instagram{
+ 	color: #44593A;
+	display: inline-block;
+	float:left;
+	margin: 0px 10px 15px 10px; 
+ }
+  .fa-facebook{
+ 	color: #44593A;
+	display: inline-block;
+	float:left;
+	margin: 0px 10px 15px 10px;
+	 
+ }
+
+
+
+/* END CONTACT FORM */
 
 
 /* -----------------------DREAM DESTINATION PAGE ----------------------------*/
+h3.ctact{
+	text-transform: capitalize;
+	color: #44593A; 
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-style: bolder;
+	letter-spacing: 4px;
+}
+h5.ctact{
+	font-size: 20px;
+}
+
+p.ctact{
+	font-size: 13px;
+	color: #44593A;
+	font-style: bold;
+}
+
+
+
+
 .content-container{
 	margin: 3% 15% 3% 15%;
 }
