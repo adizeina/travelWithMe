@@ -6,6 +6,7 @@
 *{
 	/* margin: 0px, padding: 0px ???*/
 	box-sizing: border-box;
+	text-decoration-style: none;
 }
 
 /*font-family: 'Josefin Slab', serif;
@@ -105,8 +106,6 @@ a:hover{
 
 
 /* End Navigation */
-
-
 
 .background{
 	width:100%;
@@ -237,10 +236,13 @@ input[type=submit] {
 	margin: 0px 10px 15px 10px; 
  }
 
-
-
 /* END CONTACT FORM */
 
+
+
+/* ----Animations---- */
+
+/* ----End Animations---- */
 
 
 
