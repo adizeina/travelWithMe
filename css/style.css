@@ -61,6 +61,10 @@ p{
 
 }
 
+a:hover{
+	text-decoration: none; 
+}
+
 /* HEADER */ 
 
 /* Navigation */
@@ -80,12 +84,21 @@ p{
 	color: #44593A;
 }
 
+.nav-link:hover{
+	color: #9EAC98;
+}
 
-.fa-camera {
+.fa-camera-retro {
 	color: #44593A;
 	display: inline-block;
 	float:left;
+	font-size: 25px;
 	margin: 0px 10px 15px 0px; 
+}
+
+.fa-long-arrow-alt-right{
+	color: #44593A;
+	font-size: 30px;
 }
 
 
@@ -99,25 +112,29 @@ p{
 	width:100%;
 	height: 700px;
 	background-image: url("../images/background.jpg");
+	opacity: 0.8;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-
+	z-index: -1;
 }
+
+
 
 .container-fluid{
-	padding-top:20px;
+	padding-top:40px;
 }
 .container-fluid img{
-	opacity: 0.5;
 	width:100%;
 }
 
 
 .header-text{
 	margin: 0% 15% 3% 15%;
+}
 
-
+.subtext{
+	padding-top: 10px;
+	text-align: center;
 }
 
 
@@ -206,22 +223,34 @@ input[type=submit] {
 
  .fa-instagram{
  	color: #44593A;
+ 	font-size: 20px;
 	display: inline-block;
 	float:left;
 	margin: 0px 10px 15px 10px; 
  }
-  .fa-facebook{
+
+ .fa-facebook-f{
  	color: #44593A;
 	display: inline-block;
+	font-size: 20px;
 	float:left;
-	margin: 0px 10px 15px 10px;
-	 
+	margin: 0px 10px 15px 10px; 
  }
 
 
 
 /* END CONTACT FORM */
 
+
+
+
+/* -----------------------VISITED DESTINATION PAGE ----------------------------*/
+
+.destination-container{
+	padding: 30px 0px;
+}
+
+/* ----------------------- END VISITED DESTINATION PAGE ----------------------------*/
 
 /* -----------------------DREAM DESTINATION PAGE ----------------------------*/
 h3.ctact{
@@ -249,14 +278,62 @@ p.ctact{
 	margin: 3% 15% 3% 15%;
 }
 
-.content-container .row .col-sm-6{
-	background-color: blue;
+.images{
+	width: 500px;
+	height:500px;
 }
 
 .content-container .row .col-sm-6 img{
 	max-width: 100%;
 	height:auto;
 }
+
+/* -----------------------END DREAM DESTINATION PAGE ----------------------------*/
+
+/* ------CUBA, MEXICO, CANADA IMAGE CONTAINERS--------*/
+.photo-gallery{
+	margin: 3% 10% 3% 10%;
+
+}
+
+.roww {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 60%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ------END : CUBA, MEXICO, CANADA IMAGE CONTAINERS--------*/
+
+
 
 
 /* FOOTER */
