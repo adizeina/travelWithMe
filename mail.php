@@ -1,7 +1,7 @@
 <?php
 
 // site used for help: https://blog.mailtrap.io/php-email-contact-form/
-// to know: use 
+// work on it 
 
 use PHPMailer\PHPMailer\PHPMailer;
 require __DIR__ . '/vendor/autoload.php';
