@@ -17,6 +17,7 @@
     
 	<!-- For social media icons -->
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
 	<!-- My files -->
 	<link href="../css/style.css" rel="stylesheet">
@@ -95,10 +96,7 @@
 	<div class="text-container">
 		<h3>Hello There!</h3>
 		<br>
-		<p>Welcome to my travel gallery! I really think these pictures are too beautiful to remain on my camera roll for 
-		no one to see, so enjoy my viewing my obsession with ocena/seas/beaches and trees. Can't wait to travel the world 
-		and discover more cultures around the world, try different foods and visit historic monuments. My love for history 
-		will take me outside the resorts my parents love so much and I can't wait! </p>
+		<p>Welcome to my travel gallery! I really think these pictures are too beautiful to remain on my camera roll for no one to see, so enjoy my viewing my obsession with ocena/seas/beaches and trees. Can't wait to travel the world and discover more cultures around the world, try different foods and visit historic monuments. My love for history will take me outside the resorts my parents love so much and I can't wait! </p>
 	</div>
 
 </div>
@@ -124,28 +122,24 @@
 		</div>
 		<div class="col-sm-8">
 		<div class="container">
-		    <form action="action_page.php">
+		    <form id="contact-form" name="contact-form" action="../mail.php" method="POST">
 
-		    <label for="fname"></label>
-		    <input type="text" id="fname" name="name" placeholder="Name">
-		    <br>
+			    <input type="text" id="name" name="name" placeholder="Name">
 
-		    <label for="email"></label>
-		    <input type="text" id="email" name="email" placeholder="Email">
-		    <br>
+			    <input type="text" id="email" name="email" placeholder="Email">
 
-		    <label for="country"></label>
-		    <input type="text" id="subject" name="subject" placeholder="Subject">
-		    <br>
+			    <input type="text" id="subject" name="subject" placeholder="Subject">
+			    
+			    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+
+			    <input type="submit" value="Submit">
 		    
-		    <label for="s"></label>
-		    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-		    <br>
-
-		    <input type="submit" value="Submit">
-
 		    </form>
+		  
+
+		    
 		</div>
+		<div class="status"></div>
 	</div>
 	</div>
 </div>
@@ -162,6 +156,46 @@
 <!-- END Footer -->
 
 
+<!-- Validation for contact form on user's side --> 
+<script>
+	const constraints = {
+          name: {
+              presence: {allowEmpty: false}
+          },
+          email: {
+              presence: {allowEmpty: false},
+              email: true
+          },
+          message: {
+              presence: {allowEmpty: false}
+          }
+      };
+
+      const form = document.getElementById('contact-form');
+
+      form.addEventListener('submit', function (event) {
+          const formValues = {
+              name: form.elements.name.value,
+              email: form.elements.email.value,
+              message: form.elements.message.value
+          };
+
+          const errors = validate(formValues, constraints);
+
+          if (errors) {
+              event.preventDefault();
+              const errorMessage = Object
+                  .values(errors)
+                  .map(function (fieldValues) {
+                      return fieldValues.join(', ')
+                  })
+                  .join("\n");
+
+              alert(errorMessage);
+          }
+      }, false);
+  </script>
+<!-- End of validation for contact form-->
 
 </body>
 </html>
