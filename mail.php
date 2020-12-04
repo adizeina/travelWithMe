@@ -40,13 +40,6 @@ if (!empty($_POST)) {
         $mail = new PHPMailer();
 
         // specify SMTP credentials----Figure it out zeina!!!!
-        $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'd5g6bc7a7dd6c7';
-        $mail->Password = '27f211b3fcad87';
-        $mail->SMTPSecure = 'tls';
-        $mail->Port = 2525;
 
         $mail->setFrom($email, 'Mailtrap Website');
         $mail->addAddress('zeina.adi@mail.utoronto.ca', 'Me');
