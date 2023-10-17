@@ -1,4 +1,4 @@
-# travelWithMe
+# My Travel Blog
 
 I made a travel blog website, inspo taken from a Wix template(I'm the best at designing from scratch , but I made it my own by using my own fonts, backgrounds and pictures used from my travels. 
 
